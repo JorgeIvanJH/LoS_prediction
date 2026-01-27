@@ -1,0 +1,22 @@
+EXPERIMENTATION:
+
+    What to do with numric cap? (120+ LoS, cap and treat as number? remove?)
+
+    Baseline
+        Simple model
+        Explicit missingness indicators
+    Representation learning
+        Text embeddings if available
+        Otherwise code embeddings (not diagnosis imputation)
+    Multitask learning
+        Auxiliary diagnosis prediction
+    Ablation study
+        With vs without diagnosis-derived features
+        With vs without missingness flags
+    Free-hand text fields -> Usable? 
+
+
+
+
+Consider:
+    Transfer from Emergency to Inpatient (maybe predict only impatient, but have additional column indicating it was previously emergency?)

@@ -1,0 +1,12 @@
+name: LoS_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy
+      - pandas
+      - ipykernel
+      - scikit-learn
+      - lightgbm
