@@ -10,3 +10,5 @@ dependencies:
       - ipykernel
       - scikit-learn
       - lightgbm
+      - matplotlib
+      - seaborn
