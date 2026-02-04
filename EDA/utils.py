@@ -44,7 +44,7 @@ def save_IRIS_tables(connection_string, table_names: list):
 def GetSavedTables(SAVE_DIR=SAVE_DIR):
     dfs = {}
     for file_path in SAVE_DIR.iterdir():
-        if file_path.suffix == ".pkl":
+        if (file_path.suffix == ".pkl") and ("ML_DataModel" in str(file_path)):
             print(f"Reading {file_path}")
             dfs[file_path.stem] = pd.read_pickle(file_path)
     return dfs
